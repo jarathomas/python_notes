@@ -17,3 +17,10 @@ Useful Python Functions & Examples
   ```python
   numpy.random.choice(a=["a", "b"], size=(5,5), replace=True, p=[.1, .9])
   ```
+  
+## Numpy data wrangling
+
+* Table of numpy.ndarray
+  ```python
+  np.unique(an_array, return_counts=True)
+  ```
