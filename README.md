@@ -2,6 +2,17 @@
 
 Useful Python Functions & Examples
 
+## Pandas
+
+* Something similar to R's `match(a, b)` function (i.e., return indicies of b that match each element of a)
+  ```python
+  # in R: match(c(1, 5, 10, 15), c(5, 1, 10)) gives: 2 1 3 NA
+  alist = [5, 10, 15]
+  [alist.index(i) if i in alist else np.nan for i in pd.Series([1, 5, 10, 15])]
+  # so you may need to turn a DataFrame into a list
+  # (still seems like there should be an easier way)
+  ```
+
 
 ## Numpy Random Sampling ([numpy reference](https://numpy.org/doc/stable/reference/random/legacy.html#simple-random-data))
 
