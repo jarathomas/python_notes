@@ -12,6 +12,17 @@ Useful Python Functions & Examples
   # so you may need to turn a DataFrame into a list
   # (still seems like there should be an easier way)
   ```
+  
+* Tabulations & Crosstabs
+  ```python
+  # from pandas import crosstab, DataFrame
+  df = DataFrame({"age": "child", "race": 1}, {"age": "child", "race": 1},
+                 {"age": "child", "race": 1}, {"age": "child", "race": 2},
+                 {"age": "adult", "race": 1}, {"age": "adult", "race": 1},
+                 {"age": "adult", "race": 2}, {"age": "adult", "race": 3})
+  df["age"].sort_values(ascending = False)
+  crosstab(df["age"], df["race"])
+  ```
 
 
 ## Numpy Random Sampling ([numpy reference](https://numpy.org/doc/stable/reference/random/legacy.html#simple-random-data))
