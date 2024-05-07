@@ -20,8 +20,11 @@ Useful Python Functions & Examples
                  {"age": "child", "race": 1}, {"age": "child", "race": 2},
                  {"age": "adult", "race": 1}, {"age": "adult", "race": 1},
                  {"age": "adult", "race": 2}, {"age": "adult", "race": 3})
+
   df["age"].sort_values(ascending = False)
   crosstab(df["age"], df["race"])
+  # table for one variable
+  df.age.value_counts(normalize = False, sort = True, ascending = True, bins = None, dropna = True)
   ```
 
 
