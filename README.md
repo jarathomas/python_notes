@@ -25,6 +25,12 @@ Useful Python Functions & Examples
   crosstab(df["age"], df["race"])
   # table for one variable
   df.age.value_counts(normalize = False, sort = True, ascending = True, bins = None, dropna = True)
+
+  # Display all rows in data frame
+  pd.get_option("display.max_rows")
+  pd.set_option("display.max_rows", None)
+  df
+  pd.reset_option("display.max_rows")
   ```
 
 
